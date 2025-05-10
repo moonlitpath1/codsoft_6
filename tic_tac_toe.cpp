@@ -93,9 +93,9 @@ void TicTacToe::play()
         }
         
        
-        if(boxes_filled >= 9 || win(pos))
+        if(boxes_filled > 9 || win(pos))
         {
-            if(boxes_filled >= 9)
+            if(boxes_filled > 9)
                 cout<<"It was a draw.\n\n";
             else cout<<"Congratulations!!!!\n"<<"Player "<<player[curr]<<" has won!!!\n\n";
 
